@@ -1,10 +1,7 @@
 FROM python:3.11-slim
 WORKDIR /app
+COPY requirements.txt .
 COPY backend.py .
-RUN pip install flask
-RUN pip install opentelemetry-api
-RUN pip install opentelemetry-sdk
-RUN pip install opentelemetry-exporter-jaeger
-RUN pip install deprecated
+RUN pip install -r requirements.txt 
 CMD ["python", "backend.py"]
 
