@@ -1,0 +1,9 @@
+flask
+jsonify
+requests
+opentelemetry-api
+opentelemetry-sdk
+opentelemetry-exporter-jaeger
+opentelemetry-instrumentation-requests
+opentelemetry-instrumentation-flask
+deprecated
